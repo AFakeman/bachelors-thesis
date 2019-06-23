@@ -1,0 +1,33 @@
+\documentclass{mipt-thesis-bs}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage[russian]{babel}
+\usepackage{epstopdf}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{float}
+\usepackage[14pt]{extsizes}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{biblatex}
+
+\addbibresource{bib.bib}
+\author{Суслов Антон}
+\date{}
+\begin{document}
+\tableofcontents
+
+\chapter{Введение}
+\input{./introduction.tex}
+\chapter{Основное содержание}
+\input{./content.tex}
+\chapter{Заключение}
+\input{./conclusion.tex}
+\addcontentsline{toc}{chapter}{\bibname}
+\printbibliography
+\end{document}
